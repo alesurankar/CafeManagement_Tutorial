@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace CafeManagement_Tutorial
 {
-    public partial class Form1 : Form
+    public partial class ItemForm : Form
     {
-        public Form1()
+        public ItemForm()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
