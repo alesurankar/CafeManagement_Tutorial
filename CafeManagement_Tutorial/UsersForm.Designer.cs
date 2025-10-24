@@ -42,7 +42,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.ItemsGV = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -82,7 +81,7 @@
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(239, 317);
+            this.button5.Location = new System.Drawing.Point(240, 390);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(99, 39);
             this.button5.TabIndex = 17;
@@ -95,7 +94,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(134, 317);
+            this.button2.Location = new System.Drawing.Point(135, 390);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 39);
             this.button2.TabIndex = 16;
@@ -109,20 +108,20 @@
             this.label8.ForeColor = System.Drawing.Color.DeepPink;
             this.label8.Location = new System.Drawing.Point(704, 85);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(135, 32);
+            this.label8.Size = new System.Drawing.Size(138, 32);
             this.label8.TabIndex = 15;
-            this.label8.Text = "Items List";
+            this.label8.Text = "Users List";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.DeepPink;
-            this.label3.Location = new System.Drawing.Point(12, 93);
+            this.label3.Location = new System.Drawing.Point(38, 202);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 26);
+            this.label3.Size = new System.Drawing.Size(123, 26);
             this.label3.TabIndex = 12;
-            this.label3.Text = "ItemNum";
+            this.label3.Text = "UserName";
             // 
             // panel1
             // 
@@ -138,7 +137,6 @@
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.ItemsGV);
-            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(129, 51);
             this.panel1.Name = "panel1";
@@ -150,31 +148,30 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label6.ForeColor = System.Drawing.Color.DeepPink;
-            this.label6.Location = new System.Drawing.Point(12, 237);
+            this.label6.Location = new System.Drawing.Point(38, 318);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 26);
+            this.label6.Size = new System.Drawing.Size(112, 26);
             this.label6.TabIndex = 14;
-            this.label6.Text = "ItemPrice";
+            this.label6.Text = "Password";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.ForeColor = System.Drawing.Color.DeepPink;
-            this.label5.Location = new System.Drawing.Point(12, 135);
+            this.label5.Location = new System.Drawing.Point(38, 260);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 26);
+            this.label5.Size = new System.Drawing.Size(77, 26);
             this.label5.TabIndex = 13;
-            this.label5.Text = "ItemName";
+            this.label5.Text = "Phone";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(134, 237);
+            this.textBox3.Location = new System.Drawing.Point(167, 317);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(172, 27);
             this.textBox3.TabIndex = 11;
-            this.textBox3.Text = "Quantity";
             // 
             // button1
             // 
@@ -182,7 +179,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(29, 317);
+            this.button1.Location = new System.Drawing.Point(30, 390);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 39);
             this.button1.TabIndex = 7;
@@ -192,20 +189,18 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(134, 134);
+            this.textBox2.Location = new System.Drawing.Point(167, 259);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(172, 27);
             this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "SellerName";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(134, 93);
+            this.textBox1.Location = new System.Drawing.Point(167, 205);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 27);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "OrderNum";
             // 
             // ItemsGV
             // 
@@ -219,19 +214,6 @@
             this.ItemsGV.Size = new System.Drawing.Size(728, 492);
             this.ItemsGV.TabIndex = 3;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Food",
-            "Beverage"});
-            this.comboBox1.Location = new System.Drawing.Point(75, 179);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(231, 34);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Category";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -239,9 +221,9 @@
             this.label1.ForeColor = System.Drawing.Color.DeepPink;
             this.label1.Location = new System.Drawing.Point(536, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 32);
+            this.label1.Size = new System.Drawing.Size(194, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Manage Items";
+            this.label1.Text = "Manage Users";
             // 
             // button4
             // 
@@ -308,7 +290,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView ItemsGV;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label7;

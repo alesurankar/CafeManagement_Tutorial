@@ -24,9 +24,9 @@ namespace CafeManagement_Tutorial
 
         private void label4_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form1 login = new Form1();
             login.Show();
+            this.Hide();
         }
     }
 }

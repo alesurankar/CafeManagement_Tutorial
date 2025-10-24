@@ -24,23 +24,23 @@ namespace CafeManagement_Tutorial
 
         private void label4_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Form1 login = new Form1();
             login.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
             ItemsForm item = new ItemsForm();
             item.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            UsersForm uform = new UsersForm();
+            uform.Show();
             this.Hide();
-            UsersForm user = new UsersForm();
-            user.Show();
         }
     }
 }
