@@ -10,25 +10,16 @@ using System.Windows.Forms;
 
 namespace CafeManagement_Tutorial
 {
-    public partial class ItemForm : Form
+    public partial class UserOrder : Form
     {
-        public ItemForm()
+        public UserOrder()
         {
             InitializeComponent();
         }
+
         private void label7_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

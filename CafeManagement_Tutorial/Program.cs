@@ -16,7 +16,7 @@ namespace CafeManagement_Tutorial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ItemForm());
+            Application.Run(new Form1());
         }
     }
 }
