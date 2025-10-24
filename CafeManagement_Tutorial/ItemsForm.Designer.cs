@@ -1,6 +1,6 @@
 ﻿namespace CafeManagement_Tutorial
 {
-    partial class UserOrder
+    partial class ItemsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -41,25 +40,14 @@
             this.ItemsGV = new System.Windows.Forms.DataGridView();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1354, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 26);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "X";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel1
             // 
@@ -78,7 +66,7 @@
             this.panel1.Location = new System.Drawing.Point(129, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1252, 741);
-            this.panel1.TabIndex = 6;
+            this.panel1.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -172,7 +160,7 @@
             this.ItemsGV.BackgroundColor = System.Drawing.Color.White;
             this.ItemsGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ItemsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ItemsGV.Location = new System.Drawing.Point(372, 93);
+            this.ItemsGV.Location = new System.Drawing.Point(399, 93);
             this.ItemsGV.Name = "ItemsGV";
             this.ItemsGV.RowHeadersWidth = 51;
             this.ItemsGV.RowTemplate.Height = 24;
@@ -203,18 +191,28 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Place Order";
             // 
-            // button3
+            // label7
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.DeepPink;
-            this.button3.Location = new System.Drawing.Point(12, 144);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 39);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Items";
-            this.button3.UseVisualStyleBackColor = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(1354, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 26);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "X";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(12, 769);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 23);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "LogOut";
             // 
             // button4
             // 
@@ -225,35 +223,38 @@
             this.button4.Location = new System.Drawing.Point(12, 189);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 39);
-            this.button4.TabIndex = 14;
+            this.button4.TabIndex = 16;
             this.button4.Text = "Users";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // button3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 769);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 23);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "LogOut";
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button3.ForeColor = System.Drawing.Color.DeepPink;
+            this.button3.Location = new System.Drawing.Point(12, 144);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(99, 39);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Items";
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // UserOrder
+            // ItemsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepPink;
             this.ClientSize = new System.Drawing.Size(1393, 816);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "UserOrder";
-            this.Text = "UserOrdercs";
+            this.Name = "ItemsForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ItemForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -265,7 +266,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button2;
@@ -278,8 +278,9 @@
         private System.Windows.Forms.DataGridView ItemsGV;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
