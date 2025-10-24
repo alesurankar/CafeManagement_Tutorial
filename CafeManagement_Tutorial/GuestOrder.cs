@@ -20,15 +20,11 @@ namespace CafeManagement_Tutorial
         {
             Application.Exit();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
         }
     }
 }

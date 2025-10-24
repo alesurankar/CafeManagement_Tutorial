@@ -143,7 +143,6 @@
             this.textBox2.Size = new System.Drawing.Size(172, 27);
             this.textBox2.TabIndex = 5;
             this.textBox2.Text = "SellerName";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -165,7 +164,7 @@
             this.ItemsGV.RowTemplate.Height = 24;
             this.ItemsGV.Size = new System.Drawing.Size(728, 169);
             this.ItemsGV.TabIndex = 3;
-            this.ItemsGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            //this.ItemsGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // comboBox1
             // 
@@ -213,6 +212,7 @@
             this.label4.Size = new System.Drawing.Size(75, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "LogOut";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // GuestOrder
             // 
