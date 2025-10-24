@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CafeManagement_Tutorial
 {
@@ -16,6 +17,8 @@ namespace CafeManagement_Tutorial
         {
             InitializeComponent();
         }
+
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\aleur\Documents\Cafedb.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void label7_Click(object sender, EventArgs e)
         {
@@ -43,5 +46,14 @@ namespace CafeManagement_Tutorial
             this.Hide();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Con.Open();
+            string query = "insert into UsersTbl values('" + UnameTb.Text + "','" + UphoneTb.Text + "','" + UpassTb.Text + "')";
+            SqlCommand cmd = new SqlCommand(query, Con);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("User Successfully Created");
+            Con.Close();
+        }
     }
 }
