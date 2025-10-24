@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CafeManagement_Tutorial
 {
-    public partial class GuestOrder : Form
+    public partial class UsersForm : Form
     {
-        public GuestOrder()
+        public UsersForm()
         {
             InitializeComponent();
         }
@@ -28,5 +28,20 @@ namespace CafeManagement_Tutorial
             Form1 login = new Form1();
             login.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserOrder uorder = new UserOrder();
+            uorder.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ItemsForm item = new ItemsForm();
+            item.Show();
+        }
+
     }
 }

@@ -215,6 +215,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Items";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -228,6 +229,7 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "Users";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label4
             // 
@@ -239,6 +241,7 @@
             this.label4.Size = new System.Drawing.Size(75, 23);
             this.label4.TabIndex = 15;
             this.label4.Text = "LogOut";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // UserOrder
             // 
@@ -253,6 +256,7 @@
             this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserOrder";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserOrdercs";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
