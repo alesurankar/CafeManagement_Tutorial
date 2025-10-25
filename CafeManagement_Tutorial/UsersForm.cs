@@ -19,7 +19,17 @@ namespace CafeManagement_Tutorial
         }
 
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\aleur\Documents\Cafedb.mdf;Integrated Security=True;Connect Timeout=30");
-
+        void populate()
+        {
+            Con.Open();
+            string query = "select * from UsersTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            UsersGV.DataSource = ds.Tables[0];
+            Con.Close();
+        }
         private void label7_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -54,6 +64,25 @@ namespace CafeManagement_Tutorial
             cmd.ExecuteNonQuery();
             MessageBox.Show("User Successfully Created");
             Con.Close();
+            populate();
+        }
+
+        private void UsersForm_Load(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void UsersGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Make sure the click is on a valid row (not header or empty area)
+            if (e.RowIndex >= 0 && e.RowIndex < UsersGV.Rows.Count)
+            {
+                DataGridViewRow row = UsersGV.Rows[e.RowIndex];
+
+                UnameTb.Text = row.Cells[0].Value?.ToString() ?? "";
+                UphoneTb.Text = row.Cells[1].Value?.ToString() ?? "";
+                UpassTb.Text = row.Cells[2].Value?.ToString() ?? "";
+            }
         }
     }
 }

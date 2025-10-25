@@ -41,12 +41,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.UphoneTb = new System.Windows.Forms.TextBox();
             this.UnameTb = new System.Windows.Forms.TextBox();
-            this.ItemsGV = new System.Windows.Forms.DataGridView();
+            this.UsersGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsersGV)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -106,7 +106,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label8.ForeColor = System.Drawing.Color.DeepPink;
-            this.label8.Location = new System.Drawing.Point(704, 85);
+            this.label8.Location = new System.Drawing.Point(710, 93);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 32);
             this.label8.TabIndex = 15;
@@ -136,8 +136,9 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.UphoneTb);
             this.panel1.Controls.Add(this.UnameTb);
-            this.panel1.Controls.Add(this.ItemsGV);
+            this.panel1.Controls.Add(this.UsersGV);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.panel1.Location = new System.Drawing.Point(129, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1252, 741);
@@ -203,17 +204,18 @@
             this.UnameTb.Size = new System.Drawing.Size(172, 27);
             this.UnameTb.TabIndex = 4;
             // 
-            // ItemsGV
+            // UsersGV
             // 
-            this.ItemsGV.BackgroundColor = System.Drawing.Color.White;
-            this.ItemsGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ItemsGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ItemsGV.Location = new System.Drawing.Point(421, 134);
-            this.ItemsGV.Name = "ItemsGV";
-            this.ItemsGV.RowHeadersWidth = 51;
-            this.ItemsGV.RowTemplate.Height = 24;
-            this.ItemsGV.Size = new System.Drawing.Size(728, 492);
-            this.ItemsGV.TabIndex = 3;
+            this.UsersGV.BackgroundColor = System.Drawing.Color.White;
+            this.UsersGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UsersGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UsersGV.Location = new System.Drawing.Point(421, 134);
+            this.UsersGV.Name = "UsersGV";
+            this.UsersGV.RowHeadersWidth = 51;
+            this.UsersGV.RowTemplate.Height = 24;
+            this.UsersGV.Size = new System.Drawing.Size(728, 492);
+            this.UsersGV.TabIndex = 3;
+            this.UsersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersGV_CellContentClick);
             // 
             // label1
             // 
@@ -267,9 +269,10 @@
             this.Name = "UsersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UsersForm";
+            this.Load += new System.EventHandler(this.UsersForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsersGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,7 +293,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox UphoneTb;
         private System.Windows.Forms.TextBox UnameTb;
-        private System.Windows.Forms.DataGridView ItemsGV;
+        private System.Windows.Forms.DataGridView UsersGV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label7;
