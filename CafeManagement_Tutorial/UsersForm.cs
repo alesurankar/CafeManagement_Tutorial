@@ -84,5 +84,41 @@ namespace CafeManagement_Tutorial
                 UpassTb.Text = row.Cells[2].Value?.ToString() ?? "";
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (UphoneTb.Text == "")
+            {
+                MessageBox.Show("Select the User to be Deleted");
+            }
+            else
+            {
+                Con.Open();
+                string query = "delete from UsersTbl where Uphone='" + UphoneTb.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User Successfully Deleted");
+                Con.Close();
+                populate();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(UphoneTb.Text == "" || UpassTb.Text == "" || UnameTb.Text == "")
+            {
+                MessageBox.Show("Fill All The fields");
+            }
+            else
+            {
+                Con.Open();
+                string query = "update UsersTbl set Uname'"+UnameTb.Text+"', Upassword='"+UpassTb.Text+"' where Uphone = '"+UphoneTb.Text+"'";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User Successfully Updated");
+                Con.Close();
+                populate();
+            }
+        }
     }
 }
