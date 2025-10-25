@@ -112,11 +112,17 @@ namespace CafeManagement_Tutorial
             else
             {
                 Con.Open();
-                string query = "update UsersTbl set Uname'"+UnameTb.Text+"', Upassword='"+UpassTb.Text+"' where Uphone = '"+UphoneTb.Text+"'";
-                SqlCommand cmd = new SqlCommand(query, Con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("User Successfully Updated");
+                string query = "UPDATE UsersTbl SET Uname = @Uname, Uphone = @Uphone WHERE Upassword = @Upass";
+                using (SqlCommand cmd = new SqlCommand(query, Con))
+                {
+                    cmd.Parameters.AddWithValue("@Uname", UnameTb.Text);
+                    cmd.Parameters.AddWithValue("@Uphone", UphoneTb.Text);
+                    cmd.Parameters.AddWithValue("@Upass", UpassTb.Text);
+
+                    cmd.ExecuteNonQuery();
+                }
                 Con.Close();
+                MessageBox.Show("User Successfully Updated");
                 populate();
             }
         }
