@@ -35,12 +35,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.PriceCb = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ItemNameTb = new System.Windows.Forms.TextBox();
+            this.ItemNumTb = new System.Windows.Forms.TextBox();
             this.ItemsGV = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CatCb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -59,12 +59,12 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.PriceCb);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.ItemNameTb);
+            this.panel1.Controls.Add(this.ItemNumTb);
             this.panel1.Controls.Add(this.ItemsGV);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.CatCb);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(129, 51);
             this.panel1.Name = "panel1";
@@ -141,13 +141,13 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "ItemNum";
             // 
-            // textBox3
+            // PriceCb
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(134, 237);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 27);
-            this.textBox3.TabIndex = 11;
+            this.PriceCb.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PriceCb.Location = new System.Drawing.Point(148, 237);
+            this.PriceCb.Name = "PriceCb";
+            this.PriceCb.Size = new System.Drawing.Size(172, 27);
+            this.PriceCb.TabIndex = 11;
             // 
             // button1
             // 
@@ -161,22 +161,23 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // ItemNameTb
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(134, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 27);
-            this.textBox2.TabIndex = 5;
+            this.ItemNameTb.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ItemNameTb.Location = new System.Drawing.Point(148, 134);
+            this.ItemNameTb.Name = "ItemNameTb";
+            this.ItemNameTb.Size = new System.Drawing.Size(172, 27);
+            this.ItemNameTb.TabIndex = 5;
             // 
-            // textBox1
+            // ItemNumTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(134, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 27);
-            this.textBox1.TabIndex = 4;
+            this.ItemNumTb.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ItemNumTb.Location = new System.Drawing.Point(148, 93);
+            this.ItemNumTb.Name = "ItemNumTb";
+            this.ItemNumTb.Size = new System.Drawing.Size(172, 27);
+            this.ItemNumTb.TabIndex = 4;
             // 
             // ItemsGV
             // 
@@ -189,19 +190,20 @@
             this.ItemsGV.RowTemplate.Height = 24;
             this.ItemsGV.Size = new System.Drawing.Size(728, 492);
             this.ItemsGV.TabIndex = 3;
+            this.ItemsGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ItemsGV_CellContentClick);
             // 
-            // comboBox1
+            // CatCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CatCb.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CatCb.FormattingEnabled = true;
+            this.CatCb.Items.AddRange(new object[] {
             "Food",
             "Beverage"});
-            this.comboBox1.Location = new System.Drawing.Point(75, 179);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(231, 34);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Category";
+            this.CatCb.Location = new System.Drawing.Point(89, 180);
+            this.CatCb.Name = "CatCb";
+            this.CatCb.Size = new System.Drawing.Size(231, 34);
+            this.CatCb.TabIndex = 2;
+            this.CatCb.Text = "Category";
             // 
             // label1
             // 
@@ -281,6 +283,7 @@
             this.Name = "ItemsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ItemForm";
+            this.Load += new System.EventHandler(this.ItemsForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ItemsGV)).EndInit();
@@ -292,12 +295,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox PriceCb;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ItemNameTb;
+        private System.Windows.Forms.TextBox ItemNumTb;
         private System.Windows.Forms.DataGridView ItemsGV;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CatCb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
